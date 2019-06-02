@@ -8,3 +8,12 @@ small {
   font-size: 12pt;
   transform: rotate(45deg);
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title-text {
+  text-align: centre;
+}
