@@ -1,12 +1,15 @@
 * {
-  font-family: courier;
+  font-family: "open sans";
 }
 
-small {
-  display: inline-block;
-  top: 20px;
-  font-size: 12pt;
-  transform: rotate(45deg);
+a {
+  color: #51b6ff;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-container {
@@ -15,5 +18,6 @@ small {
 }
 
 .title-text {
-  text-align: centre;
+  text-align: center;
+  padding: 15%;
 }
