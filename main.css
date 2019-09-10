@@ -1,29 +1,86 @@
 * {
-  font-family: "open sans";
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+ul {
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 a {
-  color: #51b6ff;
+    color: #51b6ff;
 }
 
-.main-image > img {
-  width: 90%;
-  padding: 10%;
-  border-radius: 50%;
+.project-group {
+    min-width: 250px;
+}
+
+.project {
+    padding: 5%;
+    height: 210px;
+    position: relative;
+}
+
+.project>a>img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.project>div {
+    bottom: 0;
+    position: absolute;
+}
+
+.small {
+    font-size: 11pt;
+}
+
+.left-nav {
+    width: 10%;
+    float: left;
+}
+
+.left-nav > ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+.main-center {
+    width: 80%;
+    float: right;
+}
+
+.main-image>img {
+    width: 100%;
+    padding: 2%;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 12pt;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20pt;
+    text-align: left;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
 }
 
 @media only screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .title-text {
-  text-align: center;
-  padding: 15%;
+    text-align: center;
+    padding: 15%;
 }
